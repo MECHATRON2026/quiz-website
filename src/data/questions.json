@@ -1,0 +1,12 @@
+[
+{
+
+"id": "q1",
+"round_id": 1,
+"question_number": 1,
+"type": "mcq",
+"question_text": "Which planet is known as the Red Planet?",
+"options": ["Earth", "Mars", "Venus", "Jupiter"],
+"marks": 1
+}
+]
