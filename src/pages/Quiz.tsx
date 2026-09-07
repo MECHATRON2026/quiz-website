@@ -1,7 +1,15 @@
+import React from 'react';
 import questions from '../data/questions.json';
+import { useAntiCheat } from '../hooks/useAntiCheat';
 
-export default function Quiz() {
+export const Quiz: React.FC = () => {
+  const teamId = localStorage.getItem('team_token');
+  
+  // Enable anti-cheat monitoring
+  useAntiCheat(teamId);
+
   const question = questions[0];
+
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold">Quiz Page</h1>
@@ -13,4 +21,4 @@ export default function Quiz() {
       </ul>
     </div>
   );
-}
+};
